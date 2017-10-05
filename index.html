@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Cumberland County GIS Local Government Showcase</title>
+    
+    <!-- meta tags -->
+    <!--<meta name="viewport" content="width=1024" /> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="description" content="Presentation slides for the local government showcase at the 2017 Central PA GIS Day event held in Harrisburg, Pennsylvania." />
+    <meta name="author" content="Patrick McKinney" />    
+    
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <!-- Stylesheet -->    
+    <link href="assets/css/style.css" rel="stylesheet" />   
+</head>
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+    <div id="impress">
+        <!-- title slide -->
+        <div id="title" class="step slide" data-x="-1200" data-y="-1500">
+            <h1 class="title">Cumberland County GIS</h1>
+            <p>Patrick McKinney<br />
+            GIS Specialist<br />
+            <a href="mailto:pmckinney@ccpa.net">pmckinney@ccpa.net</a></p>
+        </div>
+
+        <!-- responsibilities slide -->
+        <div class="step slide" data-x="0" data-y="-1500">
+            <h1 class="title">Responsibilities</h1>            
+            <ul>
+                <li>Data Maintenance</li>
+                <li>Map Production</li>
+                <li>County Departments &amp; Municipal Support</li>
+                <li>Application Development</li>
+            </ul>                
+        </div>
+        <!-- application development -->
+        <div id="appDev" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+            <h1>Application Development</h1>
+            <div id="apps">
+                <h2 id="webMaps">Web Maps</h2>
+                <h2 id="pythonScripts">Python Scripts</h2>
+            </div>
+        </div>
+        <!-- residential recycling & disposal map slide -->
+        <div id="rrdm" class="step slide" data-x="6700" data-y="-300" data-scale="6">
+            <h1 class="title">Residential Recycling &amp; Disposal Map</h1>
+            <ul>
+                <li>Leaflet.js, Bootstrap, Esri Map Services</li>
+                <li>Popups, Search, Locate Me</li>
+                <li>HTML, CSS, JavaScript, ArcGIS for Server</li>
+                <li><a href="http://gis.ccpa.net/maps/recycling-disposal/" target="_blank">View Map</a></li>
+            </ul>           
+        </div>
+        <!-- sctf map service update script slide -->
+        <div id="sctf" class="step slide" data-x="14000" data-y="-300" data-scale="6">
+            <h1 class="title">SCTF Regional Update From Map Services</h1>
+            <ul>
+                <li>Python script (ArcPy)</li>
+                <li>Updates datasets from map/feature services</li>
+                <li>E-mail notification if service is down</li>
+                <li><a href="https://github.com/pmacMaps/copy-features-from-map-service" target="_blank">View Code</a></li>
+            </ul>            
+        </div>
+        <!-- end slide -->
+        <div id="endSlide" class="step" data-x="14000" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+            <p>Thanks Everyone!</p>
+            <hr />
+            <p>Patrick McKinney, Cumberland County GIS</p>
+            <hr />
+            <p>Created with <a href="https://github.com/impress/impress.js" target="_blank">impress.js</a></p>      
+        </div>    
+        <!-- overview -->
+        <div id="overview" class="step" data-x="6000" data-y="1000" data-scale="20"></div>
+    </div>
+    <!-- hint for navigating slides -->
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+    <!-- scripts -->
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+    <script src="assets/js/impress.js"></script>
+    <script>impress().init();</script>
+</body>
+</html>
