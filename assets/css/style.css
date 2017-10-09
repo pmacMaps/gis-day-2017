@@ -235,7 +235,7 @@ a:focus {
     -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
     -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
     -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
-    transition:         opacity 1s,         transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;    
 }
 
 .impress-enabled .hint { display: block }
@@ -247,11 +247,11 @@ a:focus {
     -ms-transform:     translateY(0px);
     -o-transform:      translateY(0px);
     transform:         translateY(0px);    
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
-    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
-    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
-    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+    -webkit-transition: opacity 1s 1.5s, -webkit-transform 0.5s 1.5s;
+    -moz-transition:    opacity 1s 1.5s,    -moz-transform 0.5s 1.5s;
+    -ms-transition:     opacity 1s 1.5s,     -ms-transform 0.5s 1.5s;
+    -o-transition:      opacity 1s 1.5s,      -o-transform 0.5s 1.5s;
+    transition:         opacity 1s 1.5s,         transform 0.5s 1.5s;
 }
 
 .impress-enabled          { pointer-events: none }
@@ -270,12 +270,12 @@ a:focus {
     background: #fff;
     border: 2px solid #000;
     border-radius: 100%;
-    text-align: center;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition:    all 0.5s ease-in-out;
-    -ms-transition:     all 0.5s ease-in-out;
-    -o-transition:      all 0.5s ease-in-out;
-    transition:         all 0.5s ease-in-out;
+    text-align: center;    
+    -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition:    background 0.5s ease-in-out, color 0.5s ease-in-out;
+    -ms-transition:     background 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition:      background 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition:         background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 #appDev h1 {
@@ -289,9 +289,10 @@ a:focus {
     color: #fff;    
 }
 
-#appDev > #apps {
+#appDev #apps #webMaps,
+#appDev #apps #pythonScripts {
     opacity: 0;
-    font-size: 45px; 
+    font-size: 45px;
     -webkit-transition: opacity 1s ease-in;
     -moz-transition:    opacity 1s ease-in;
     -ms-transition:     opacity 1s ease-in;
@@ -299,8 +300,10 @@ a:focus {
     transition:         opacity 1s ease-in;
 }
 
-#appDev:hover > #apps,
-#appDev:focus > #apps {
+#appDev:hover > #apps #webMaps,
+#appDev:focus > #apps #webMaps,
+#appDev:hover > #apps #pythonScripts,
+#appDev:focus > #apps #pythonScripts {
     opacity: 1;
 }
 
