@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,14 +75,13 @@ a:focus {
 .fallback-message {
     font-family: sans-serif;
     line-height: 1.3;
-
     width: 780px;
+    max-width: 100%;
     padding: 10px 10px 0;
     margin: 20px auto;
-
     border: 1px solid #E4C652;
     border-radius: 10px;
-    background: #EEDC94;
+    background: #EEDC94;    
 }
 
 .fallback-message p {
@@ -98,7 +104,6 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
     font-size: 48px;
     line-height: 1.5;
 }
@@ -118,19 +123,14 @@ a:focus {
 
 .slide {
     display: block;
-
-    width: 900px;
+    width: 900px;    
     height: 700px;
     padding: 40px 60px;
-
     background-color: white;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-
-    color: #666;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-
+    color: #333;    
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
@@ -141,7 +141,6 @@ a:focus {
     display: block;
     font-size: 50px;
     line-height: 72px;
-
     margin-top: 50px;
 }
 
@@ -219,7 +218,7 @@ a:focus {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 200px;
+    bottom: 125px;
     background: rgba(0,0,0,0.5);
     color: #EEE;
     text-align: center;
@@ -260,10 +259,10 @@ a:focus {
 
 /* Custom Styles */
 .slide .title {
-    color: #000;
+    margin-bottom: 75px;    
     font-weight: bold;
-    font-size: 65px;
-    margin-bottom: 75px;
+    font-size: 75px;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
 #appDev {
